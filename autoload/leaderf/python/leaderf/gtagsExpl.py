@@ -28,7 +28,8 @@ class GtagsExplorer(Explorer):
             self._cd_option = '/d '
         else:
             self._cd_option = ''
-        self._root_markers = lfEval("g:Lf_RootMarkers")
+        #  self._root_markers = lfEval("g:Lf_RootMarkers")
+        self._root_markers = ".project_tags"
         self._db_location = os.path.join(lfEval("g:Lf_CacheDirectory"),
                                      '.LfCache',
                                      'gtags')
